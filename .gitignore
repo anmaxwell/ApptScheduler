@@ -4,3 +4,4 @@ env
 __pycache__
 .pyc
 site.db
+.ipynb_checkpoints
