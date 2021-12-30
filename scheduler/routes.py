@@ -1,6 +1,7 @@
 import os
 from flask import render_template, flash
 from scheduler import app
+from scheduler.forms import RunModel
 
 @app.route('/') #Page to display tiles
 def home():
@@ -17,9 +18,9 @@ def train_model():
 @app.route('/run') #Page to display tiles
 def run_model():
 
-    #form = SetKbase()
+    form = RunModel()
 
-    return render_template('run_model.html')
+    return render_template('run_model.html',title='RunModel', form=form)
 
 @app.route('/data') #Page to display tiles
 def data():
