@@ -7,3 +7,6 @@ site.db
 .ipynb_checkpoints
 runs
 TestRuns.ipynb
+.sav
+.csv
+.xlsx
